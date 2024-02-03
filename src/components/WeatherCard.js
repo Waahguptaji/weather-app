@@ -1,6 +1,8 @@
 import React from "react";
 import { FaTemperatureHigh } from "react-icons/fa";
 import { FaTemperatureLow } from "react-icons/fa";
+import { FiSunrise } from "react-icons/fi";
+import { FiSunset } from "react-icons/fi";
 
 const WeatherCard = ({ data, unit }) => {
   const { current, forecast } = data;
@@ -68,21 +70,13 @@ const WeatherCard = ({ data, unit }) => {
           {/* Sunrise/sunset */}
           <div className="stats shadow stats-primary">
             <div className="stat">
-              <img
-                src="./images/sunrise-white.png"
-                alt="Sunrise Icon"
-                className="w-8 h-8 mr-2"
-              />
+              <FiSunrise />
               <div className="stat-title">Sunrise</div>
               <div>{forecast?.forecastday[0]?.astro?.sunrise}</div>
             </div>
 
             <div className="stat">
-              <img
-                src="./images/sunset-white.png"
-                alt="Sunset Icon"
-                className="w-8 h-8 mr-2"
-              />
+              <FiSunset />
               <div className="stat-title">Sunset</div>
               <div>{forecast?.forecastday[0]?.astro?.sunset}</div>
             </div>
