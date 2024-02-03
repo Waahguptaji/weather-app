@@ -4,7 +4,9 @@ This is a weather application built with React, TailwindCSS and DaisyUI that all
 
 ## Website
 The React Weather App is deployed via Vercel:
-Vue Weather App - Netlify
+- Weather App - [Vercel](https://weather-app-iota-gilt-56.vercel.app)
+
+
 
 ## Features
 
