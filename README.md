@@ -1,70 +1,66 @@
-# Getting Started with Create React App
+# Weather App 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a weather application built with React, TailwindCSS and DaisyUI that allows you to search for current weather and 5 day forecast in your desired city.
 
-## Available Scripts
+## Website
+The React Weather App is deployed via Vercel:
+Vue Weather App - Netlify
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- See current temperature, weather condition, highest temp, lowest temp etc for a location
+- View 5 day forecast with weather details for each day
+- Switch temperature units between Celsius and Fahrenheit  
+- Light and dark mode
+- Responsive UI using Tailwind and DaisyUI
+  
+## Running Locally
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Cloning the repo
+>`git clone https://github.com/yourusername/weather-app.git`
+>`cd weather-app`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Change The API KEY
+>In the `constants.js` folder change the API_KEY to your own KEY.
 
-### `npm test`
+### Installing dependencies
+`npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Starting the dev server
+`npm start`
 
-### `npm run build`
+- This will install dependencies and start the app on http://localhost:3000
+> **Note**
+> If port 3000 is in use, it will use next available port
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Build for production
+`npm run build`
+This will generate a production build in `build` folder.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Running tests
+`npm test`
+Runs all test cases.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> The project needs to be cloned locally before running above commands. Alternatively, you can fork the repo and clone your fork.
 
-### `npm run eject`
+## Usage
+- Enter name of your desired city to fetch weather
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Changing temperature units 
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Default is Celsius
+- Toggle button in navbar to switch to Fahrenheit 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Dark mode
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Enable dark mode using theme toggle on navbar
+- Styling done using DaisyUI
 
-## Learn More
+## Built with
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- [React](https://reactjs.org/) - Frontend framework 
+- [Tailwind CSS](https://tailwindcss.com/) - For styling
+- [Daisy UI](https://daisyui.com/) - Tailwind CSS component library
+- [Weather API](https://(https://www.weatherapi.com/docs/) - API for weather data
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Let me know if you would like any changes or have additional sections to add!
